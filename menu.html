@@ -185,14 +185,14 @@
 </div>
 
 <script>
-    // --- Generación automática de contenido (Fotos y Vídeos) ---
+    // --- Generación automática de contenido (Fotos y Vídeos) desde el directorio principal ---
     document.addEventListener("DOMContentLoaded", () => {
         // --- FOTOGRAFÍAS ---
         // Florencia (1 a 115)
         const gridFlorencia = document.getElementById("grid-florencia");
         for (let i = 1; i <= 115; i++) {
             const img = document.createElement("img");
-            img.src = `florencia/florencia (${i}).jpg`;
+            img.src = `florencia (${i}).jpg`;
             img.alt = `Florencia ${i}`;
             img.className = "galeria-item";
             img.onclick = () => verImagen(img.src);
@@ -203,7 +203,7 @@
         const gridRoma = document.getElementById("grid-roma");
         for (let i = 1; i <= 46; i++) {
             const img = document.createElement("img");
-            img.src = `roma/roma (${i}).jpg`;
+            img.src = `roma (${i}).jpg`;
             img.alt = `Roma ${i}`;
             img.className = "galeria-item";
             img.onclick = () => verImagen(img.src);
@@ -214,7 +214,7 @@
         const gridRimini = document.getElementById("grid-rimini");
         for (let i = 1; i <= 29; i++) {
             const img = document.createElement("img");
-            img.src = `rimini/rimini (${i}).jpg`;
+            img.src = `rimini (${i}).jpg`;
             img.alt = `Rimini ${i}`;
             img.className = "galeria-item";
             img.onclick = () => verImagen(img.src);
@@ -225,7 +225,7 @@
         const gridSanMarino = document.getElementById("grid-sanmarino");
         for (let i = 1; i <= 42; i++) {
             const img = document.createElement("img");
-            img.src = `san marino/san marino (${i}).jpg`;
+            img.src = `san marino (${i}).jpg`;
             img.alt = `San Marino ${i}`;
             img.className = "galeria-item";
             img.onclick = () => verImagen(img.src);
@@ -236,25 +236,25 @@
         // Videos Florencia (1 a 3)
         const gridVidFlorencia = document.getElementById("grid-vid-florencia");
         for (let i = 1; i <= 3; i++) {
-            crearThumbnailVideo(gridVidFlorencia, `videos florencia/florencia (${i}).mp4`);
+            crearThumbnailVideo(gridVidFlorencia, `florencia (${i}).mp4`);
         }
 
         // Videos Roma (1 a 10)
         const gridVidRoma = document.getElementById("grid-vid-roma");
         for (let i = 1; i <= 10; i++) {
-            crearThumbnailVideo(gridVidRoma, `videos roma/roma (${i}).mp4`);
+            crearThumbnailVideo(gridVidRoma, `roma (${i}).mp4`);
         }
 
         // Videos Rimini (1 a 3)
         const gridVidRimini = document.getElementById("grid-vid-rimini");
         for (let i = 1; i <= 3; i++) {
-            crearThumbnailVideo(gridVidRimini, `videos rimini/rimini (${i}).mp4`);
+            crearThumbnailVideo(gridVidRimini, `rimini (${i}).mp4`);
         }
 
         // Videos San Marino (1 a 2)
         const gridVidSanMarino = document.getElementById("grid-vid-sanmarino");
         for (let i = 1; i <= 2; i++) {
-            crearThumbnailVideo(gridVidSanMarino, `videos san marino/san marino (${i}).mp4`);
+            crearThumbnailVideo(gridVidSanMarino, `san marino (${i}).mp4`);
         }
     });
 
